@@ -1,0 +1,13 @@
+.button {
+  display: flex;
+  align-self: center;
+  background: var(--primary);
+  color: var(--white);
+  font-family: var(--font-family);
+}
+
+.button:hover,
+.button:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
