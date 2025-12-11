@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  background-image: url('src/images/background.png');
+  background-image: url('./src/images/background.png');
   background-size: cover;
   gap: 20px;
 }
