@@ -1,0 +1,33 @@
+.diagram {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.diagram__item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.diagram_procent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.diagram_title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 130%;
+  color: var(--gray-900);
+}
+
+.diagram_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--gray-900);
+}

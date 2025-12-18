@@ -6,3 +6,10 @@
 @import './styles/components/page.css';
 @import './styles/components/header.css';
 @import './styles/components/button.css';
+@import './styles/components/background.css';
+@import './styles/components/information.css';
+@import './styles/components/analysis.css';
+@import './styles/components/feedback.css';
+@import './styles/components/cases.css';
+@import './styles/components/footer.css';
+@import './styles/components/diagram.css';

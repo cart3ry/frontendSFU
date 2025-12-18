@@ -37,7 +37,11 @@
   color: blueviolet;
 }
 
-.header--opacity {
+.header__text--opacity {
+  opacity: 0.6;
+}
+
+.header__link--opacity {
   opacity: 0.6;
 }
 
