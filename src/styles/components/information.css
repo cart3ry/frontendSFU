@@ -5,6 +5,18 @@
   padding: 100px 345px 120px;
 }
 
+.information__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat url('../../../src/images/background_information.svg');
+  background-position: right center;
+  background-position: right 248px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
 .information__left-block {
   display: flex;
   flex-direction: column;

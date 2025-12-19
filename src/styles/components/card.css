@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 29px;
+}
+
+.card__item {
+  background: var(--white);
+  padding: 40px;
+  max-width: 390px;
+  border: 1px solid var(--gray-300);
+  order: 1px solid var(--gray-300);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px -4px rgb(30 33 44 / 5%);
+}
+
+.card__item--background {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../../src/images/cases/image.svg');
+  background-size: cover;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  box-shadow:
+    0 4px 4px -4px rgb(30 33 44 / 5%),
+    0 12px 10px -6px rgb(30 33 44 / 8%),
+    0 26px 24px -10px rgb(30 33 44 / 10%),
+    0 60px 80px -20px rgb(30 33 44 / 16%);
+}
+
+.card__item:hover,
+.card__item:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.card__logo {
+  max-width: 80px;
+}
+
+.card__slogan {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-900);
+  padding-bottom: 20px;
+}
+
+.card__slogan--white {
+  color: var(--white);
+}
+
+.card__divider {
+  border: 1px solid;
+  border-image: linear-gradient(
+      270.01deg,
+      rgb(218 219 221 / 0%) 0%,
+      rgb(218 219 221 / 50%) 12.33%,
+      #dadbdd 51.91%,
+      rgb(218 219 221 / 50%) 87.85%,
+      rgb(218 219 221 / 0%) 100%
+    )
+    1;
+}
+
+.card__description {
+  padding-top: 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-700);
+}
+
+.card__description--white {
+  color: var(--white);
+}
+
+.card__numbers {
+  padding-top: 71px;
+}

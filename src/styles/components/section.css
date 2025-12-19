@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat url('../../../src/images/background_section.svg');
+  background-position: right center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}

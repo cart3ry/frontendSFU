@@ -1,0 +1,26 @@
+.person {
+  display: flex;
+  gap: 20px;
+}
+
+.person__describe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.person__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-900);
+}
+
+.person__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-700);
+}

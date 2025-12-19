@@ -1,2 +1,60 @@
 .analysis {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  padding: 80px 345px;
+}
+
+.analysis__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 556px;
+  background: no-repeat url('../../../src/images/background_analysis.png');
+  background-position: right center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.analysis__illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.analysis__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.analysis__content {
+  flex: 1;
+  z-index: 2;
+}
+
+.analysis__title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--white);
+  padding-bottom: 40px;
+}
+
+.analysis__background {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: auto;
+  max-width: 35vw;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.8;
 }
