@@ -1,0 +1,43 @@
+.newsletter {
+  max-width: 100%;
+}
+
+.newsletter__input {
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid rgb(255 255 255 / 20%);
+  background: rgb(255 255 255 / 12%);
+  position: relative;
+  max-height: 36px;
+}
+
+.newsletter__input-email {
+  flex: 1;
+  padding: 12px;
+  background: rgb(255 255 255 / 12%);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.newsletter__button {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(255 255 255 / 12%);
+  border: none;
+  padding: 0 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.newsletter__button:hover {
+  opacity: 0.8;
+}

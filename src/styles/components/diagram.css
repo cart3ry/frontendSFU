@@ -10,13 +10,13 @@
   gap: 20px;
 }
 
-.diagram_procent {
+.diagram__procent {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.diagram_title {
+.diagram__title {
   font-family: var(--font-family);
   font-weight: 900;
   font-size: 32px;
@@ -24,7 +24,7 @@
   color: var(--gray-900);
 }
 
-.diagram_text {
+.diagram__text {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;

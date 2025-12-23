@@ -6,20 +6,6 @@
   padding: 80px 345px;
 }
 
-.analysis__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  min-height: 556px;
-  background: no-repeat url('../../../src/images/background_analysis.png');
-  background-position: right center;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-}
-
 .analysis__illustration {
   flex: 1;
   display: flex;

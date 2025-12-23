@@ -8,6 +8,5 @@
 
 .button:hover,
 .button:focus {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
+  background: var(--secondary);
 }

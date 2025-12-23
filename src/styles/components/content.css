@@ -1,2 +1,39 @@
 .content {
 }
+
+.content__information-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat url('../../../src/images/background_information.svg');
+  background-position: right center;
+  background-position: right 248px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.content__analysis-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 556px;
+  background: no-repeat url('../../../src/images/background_analysis.png');
+  background-position: right center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.content__section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat url('../../../src/images/background_section.svg');
+  background-position: right center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
