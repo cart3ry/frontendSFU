@@ -85,3 +85,20 @@
   text-align: center;
   padding: 0 40px;
 }
+
+@media (width <= 1640px) {
+  .form {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form__group {
+    flex: 1 1 100%;
+  }
+
+  .form__checkbox-container {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+}

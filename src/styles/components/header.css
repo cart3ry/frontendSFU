@@ -88,3 +88,71 @@
   text-align: center;
   color: var(--white);
 }
+
+@media (width <= 1640px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px 20px;
+  }
+
+  .header__logo {
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .header__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .header__item {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .header__button {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .header__way {
+    padding: 20px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .header__text {
+    font-size: 12px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .header__client {
+    padding: 0 16px;
+  }
+
+  .header__title {
+    padding: 20px 16px 40px;
+    font-size: 28px;
+    line-height: 1.3;
+    text-align: center;
+  }
+}

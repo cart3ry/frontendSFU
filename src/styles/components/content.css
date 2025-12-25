@@ -53,3 +53,19 @@
   overflow: hidden;
   position: relative;
 }
+
+@media (width <= 1640px) {
+  .content__information-wrapper > .information {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px !important;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .content__information-wrapper,
+  .content__analysis-wrapper,
+  .content__section-wrapper {
+    padding: 0 16px;
+  }
+}

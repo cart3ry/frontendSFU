@@ -1,9 +1,12 @@
 .button {
   display: flex;
   align-self: center;
+  justify-content: center;
   background: var(--primary);
   color: var(--white);
   font-family: var(--font-family);
+  max-width: 255px;
+  max-height: 56px;
 }
 
 .button:hover,

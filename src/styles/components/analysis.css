@@ -44,3 +44,26 @@
   pointer-events: none;
   opacity: 0.8;
 }
+
+@media (width <= 1640px) {
+  .analysis {
+    flex-direction: column;
+    padding: 40px 0 !important;
+    gap: 32px;
+  }
+
+  .analysis__illustration {
+    order: 2;
+  }
+
+  .analysis__content {
+    order: 1;
+    width: 100%;
+  }
+
+  .analysis__title {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 24px;
+  }
+}

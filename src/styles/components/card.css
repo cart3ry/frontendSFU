@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
   justify-content: center;
   gap: 29px;
 }
@@ -80,4 +80,26 @@
 
 .card__numbers {
   padding-top: 71px;
+}
+
+@media (width <= 1640px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+  }
+
+  .card__logo {
+    max-width: 60px;
+  }
+
+  .card__slogan {
+    font-size: 14px;
+  }
+
+  .card__description {
+    font-size: 14px;
+  }
 }
