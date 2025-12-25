@@ -14,6 +14,41 @@
     </style>
   </head>
   <body>
+    <script>
+      function toggleTheme() {
+        const html = document.documentElement;
+
+        const currentTheme = html.getAttribute('data-theme');
+
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        html.setAttribute('data-theme', newTheme);
+
+        localStorage.setItem('theme', newTheme);
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else {
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        }
+        const themeToggle = document.getElementById('theme-toggle-btn');
+        if (themeToggle) {
+          themeToggle.addEventListener('click', toggleTheme);
+        }
+      });
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+          document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+        }
+      });
+    </script>
     <div class="page">
       <header class="header">
         <nav class="header__nav">
@@ -67,9 +102,27 @@
           <img src="src/images/client-logo.png" alt="" />
         </div>
         <div class="header__title">200% increase in conversion rate for Lovato Company</div>
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Переключить тему">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path d="M12 2V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M12 20V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M4.93 4.93L6.34 6.34" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M17.66 17.66L19.07 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M2 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M20 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M6.34 17.66L4.93 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M19.07 4.93L17.66 6.34" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
       </header>
       <div class="content">
         <div class="content__information-wrapper">
+          <div class="content__information-bg"></div>
           <div class="information">
             <div class="information__left-block">
               <div class="information__diagram diagram">
@@ -77,20 +130,20 @@
                   <img src="src/images/circle_red.png" alt="" class="" />
                   <div class="diagram__procent">
                     <span class="diagram__title">70% </span>
-                    <span class="diagram__test"> Open Rate</span>
+                    <span class="diagram__text"> Open Rate</span>
                   </div>
                 </div>
                 <div class="diagram__item">
                   <img src="src/images/circle_yellow.png" alt="" class="" />
                   <div class="diagram__procent">
                     <span class="diagram__title">200% </span>
-                    <span class="diagram__test"> Growth in sales</span>
+                    <span class="diagram__text"> Growth in sales</span>
                   </div>
                 </div>
                 <div class="diagram__item">
                   <div class="diagram__procent">
                     <span class="diagram__title">8000 </span>
-                    <span class="diagram__test"> DAU</span>
+                    <span class="diagram__text"> DAU</span>
                   </div>
                 </div>
               </div>
